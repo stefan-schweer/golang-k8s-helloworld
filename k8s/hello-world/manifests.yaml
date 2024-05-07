@@ -14,7 +14,7 @@ spec:
         app: hello-world
     spec:
       containers:
-      - image: ghcr.io/stefan-schweer/golang-k8s-helloworld/hello-world:0.01
+      - image: ghcr.io/stefan-schweer/golang-k8s-helloworld/hello-world:0.02
         name: guestbook-ui
         ports:
         - containerPort: 8080
