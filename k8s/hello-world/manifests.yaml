@@ -17,7 +17,7 @@ spec:
       - image: ghcr.io/stefan-schweer/golang-k8s-helloworld/hello-world:0.01
         name: guestbook-ui
         ports:
-        - containerPort: 80
+        - containerPort: 8080
 ---
 apiVersion: v1
 kind: Service
@@ -25,7 +25,7 @@ metadata:
   name: hello-world
 spec:
   ports:
-  - port: 80
-    targetPort: 80
+  - port: 8080
+    targetPort: 8080
   selector:
     app: hello-world
